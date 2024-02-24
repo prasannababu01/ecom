@@ -1,0 +1,9 @@
+.ratingcon{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    width: 200px;
+    height: 100px;
+}

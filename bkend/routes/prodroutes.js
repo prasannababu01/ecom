@@ -1,0 +1,10 @@
+let express=require("express")
+const { upload, addprod, getprod, addcom } = require("../cont/prodcont")
+const { adduser, login } = require("../cont/usercont")
+let route=new express.Router()
+route.post("/add",upload.single("img"),addprod)
+route.get("/getprod",getprod)
+route.post("/adduser",adduser)
+route.post("/login",login)
+route.post("/addcom",addcom)
+module.exports=route
